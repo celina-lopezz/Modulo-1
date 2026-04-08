@@ -1,0 +1,161 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.21 of 2022/01/12
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset{
+    language=HTML,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue}\bfseries,
+    stringstyle=\color{orange},
+    commentstyle=\color{gray}\itshape,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=8pt,
+    backgroundcolor=\color{white},
+    showspaces=false,
+    showstringspaces=false,
+    frame=single,
+    rulecolor=\color{black!30},
+    tabsize=2,
+    breaklines=true,
+    breakatwhitespace=true,
+    captionpos=b % Leyenda debajo del código
+}
+\usepackage[T1]{fontenc}
+% T1 fonts will be used to generate the final print and online PDFs,
+% so please use T1 fonts in your manuscript whenever possible.
+% Other font encondings may result in incorrect characters.
+%
+\usepackage{graphicx}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following two lines
+% to display URLs in blue roman font according to Springer's eBook style:
+%\usepackage{color}
+%\renewcommand\UrlFont{\color{blue}\rmfamily}
+%\urlstyle{rm}
+%
+\begin{document}
+%
+\title{Modulo 1 ZZZ}
+%
+%\titlerunning{Abbreviated paper title}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{Celina Lopez\inst{1}\orcidID{ } \and
+Maia Ortiz\inst{1}\orcidID{ } \and
+Rocio Gomez\inst{1}\orcidID{ } \and
+Bautista Pons\inst{1}\orcidID{ }}
+%
+\authorrunning{B. Pons}
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%
+\institute{Universidad Nacional de Cuyo, Instituto de Ingenieria Industrisl POBOX 5502 %\and
+\email{baupons@gmail.com}\\
+\url{http://ingenieria.uncuyo.edu.ar/} % \and
+%ABC Institute, Rupert-Karls-University Heidelberg, Heidelberg, Germany\\
+%\email{\{abc,lncs\}@uni-heidelberg.de}}
+}
+
+%
+\maketitle              % typeset the header of the contribution
+%
+\begin{abstract}
+%The abstract should briefly summarize the contents of the paper in
+%150--250 words.
+Markdown es una herramienta clave para la creación de páginas en GitHub, ya que permite estructurar contenido de manera sencilla y legible. Con ella se pueden generar páginas individuales para cada integrante de un proyecto, enlazando después a una página principal del grupo que centralice la información. Esto fomenta la organización y la colaboración, ya que cada miembro puede documentar su trabajo y vincularlo al repositorio común.
+
+En el ámbito colaborativo, GitHub ofrece la posibilidad de trabajar con tablas y de incrustar imágenes directamente en los archivos Markdown \cite{sepulcre2024uso}, lo que enriquece la presentación de datos y facilita la comprensión visual. Además, se pueden integrar fragmentos de código HTML siguiendo los estándares del W3C, garantizando compatibilidad y buenas prácticas en el desarrollo web.
+
+La construcción de una landing page es un ejemplo práctico de cómo combinar estas herramientas: se puede diseñar una página de inicio atractiva que presente el proyecto, utilizando Markdown para la estructura, HTML para elementos más avanzados y GitHub Pages \cite{lopez2003latex} para la publicación. De esta manera, el grupo logra una presencia digital clara y profesional, con enlaces tanto a las páginas individuales como a la página grupal. En conjunto, estas técnicas permiten documentar, compartir y mostrar proyectos de manera efectiva, potenciando la colaboración y la visibilidad en entornos académicos o profesionales.
+
+\keywords{UNCuyo \and TyHM \and markup language.}
+\end{abstract}
+%
+%
+%
+\section{Introducción}
+Tras completar el aprendizaje sobre la gestión de repositorios y el trabajo en equipo, este informe profundiza en la aplicación práctica de herramientas esenciales para la comunicación técnica. En primer lugar, se presenta una demostración de HTML para la estructuración básica de páginas web, seguida de un análisis sobre la eficiencia de Markdown en la documentación de proyectos dentro de GitHub. Asimismo, se explora el uso de LaTeX como el estándar profesional para la redacción de textos científicos y académicos de alta precisión. Finalmente, el documento destaca la importancia de las hojas de trucos (cheatsheets) como guías de referencia para optimizar la transición entre distintos lenguajes y asegurar la calidad formal en la elaboración de memorias técnicas e informes de ingeniería.
+
+
+
+
+\section{Uso basico de html}
+\begin{lstlisting}[caption={Estructura básica de un documento HTML5.}, label={list:html_ejemplo}]
+
+<html>
+  <head>
+    <h1>Mi primer pagina de web</h1>
+  </head>
+  <body>
+    Esto es el cuerpo del texto
+    <p>Esto es un parrafo</p>
+    
+    <ul>
+      
+      <li>primero</li>
+      <li>segundo</li>
+    </ul>
+  </body>
+</html>
+\end{lstlisting}
+
+
+\section{Lenguajes: Markdown y LaTeX}
+Aparte del HTML, en esta unidad didáctica empleamos diversos lenguajes de marcado que resultan fundamentales para la elaboración de textos técnicos y científicos.
+
+
+\subsection{Markdown en GitHub}
+
+\section*{¿Qué es Markdown?}
+
+Markdown es un lenguaje de marcado ligero que permite aplicar formato al texto de forma rápida, utilizando caracteres sencillos de teclado. En lugar de usar menús complejos o código HTML pesado, Markdown utiliza símbolos como asteriscos, almohadillas o guiones para dar estructura al contenido.
+
+\section*{¿Por qué se usa en GitHub?}
+
+En el mundo del desarrollo de software, la documentación es tan importante como el código mismo. GitHub adoptó Markdown (específicamente una variante llamada \textbf{GitHub Flavored Markdown} o \textit{GFM}) por tres razones principales:
+
+\begin{itemize}
+    \item \textbf{Legibilidad:} El texto es fácil de leer incluso en su estado puro (código fuente), sin necesidad de ser procesado.
+    \item \textbf{Velocidad:} Permite crear encabezados, listas, tablas y enlaces sin despegar las manos del teclado.
+    \item \textbf{Integración:} Es el estándar para los archivos \texttt{README.md}, que sirven como la carta de presentación de cualquier repositorio, explicando de qué trata el proyecto y cómo instalarlo.
+\end{itemize}
+
+\subsection{Escritura en LaTeX}
+
+LaTeX se define como un potente entorno de preparación de documentos, diseñado específicamente para alcanzar un estándar profesional en textos técnicos y académicos. Su principal ventaja radica en el uso de comandos lógicos que independizan la redacción del diseño final, garantizando una precisión absoluta en la edición de ecuaciones, bibliografías y estructuras complejas. Por su capacidad para organizar la información de forma jerárquica y eficiente, se establece como el recurso clave para el desarrollo de memorias técnicas e informes de ingeniería.
+
+\subsection{Cheatsheets}
+El uso de cheatsheets constituye un soporte fundamental para asegurar la precisión en la implementación de diversos lenguajes de marcado. Estas guías ofrecen un resumen estructurado de las reglas y etiquetas más utilizadas, sirviendo como un manual de bolsillo que facilita la transición entre diferentes sintaxis. Al centralizar la información clave, las guías de referencia se convierten en el recurso ideal para estandarizar el formato de los documentos y minimizar errores técnicos durante las fases de aprendizaje y práctica profesional.
+
+
+\subsection{Google Colab}
+Google Colab es un servicio gratuito en la nube que permite programar en Python desde el navegador sin realizar instalaciones locales. Funciona como un cuaderno interactivo basado en Jupyter que utiliza los servidores de Google para ejecutar código, lo que permite aprovechar hardware potente como GPUs para tareas de inteligencia artificial y análisis de datos. Al integrarse con Google Drive, facilita el almacenamiento automático y el trabajo colaborativo en tiempo real, ofreciendo un entorno ya configurado con las librerías científicas más importantes y listo para usar en cualquier dispositivo.
+
+
+
+\section{Conclusión}
+A modo de cierre, el trabajo realizado en este módulo marca una evolución clara en mi perfil técnico. El dominio de **HTML** para estructurar contenidos web y el uso de **Markdown** para documentar procesos en GitHub demuestran una adaptación exitosa a las herramientas de colaboración actuales. Por otro lado, la transición hacia **LaTeX** ha sido el paso definitivo hacia la profesionalización de mis informes, permitiéndome alcanzar un nivel de rigor y estética que los procesadores convencionales no ofrecen.
+
+En conjunto con el **Grupo ZZZ**, he logrado integrar estas tecnologías para optimizar la gestión de la información y la producción académica. La capacidad de utilizar *cheatsheets* para agilizar el aprendizaje y la creación de una base de conocimientos estructurada no solo mejora mi productividad actual, sino que me prepara para enfrentar proyectos de ingeniería más complejos con una metodología de trabajo sólida, colaborativa y de estándar internacional.
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
